@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "Japanese Samurai",
+      "img": "images/Japanese samurai.jpg",
+      "price": "540"
+    },
+    {
+      "id": 2,
+      "name": "Dengel Wings",
+      "img": "images/devil-angel.jpg",
+      "price": "630"
+    },
+    {
+      "id": 3,
+      "name": "Paint Spalsh",
+      "img": "images/paint spalsh.jpg",
+      "price": "300"
+    },
+    {
+      "id": 4,
+      "name": "Hanging",
+      "img": "images/boho.jpg",
+      "price": "180"
+    },
+    {
+      "id": 5,
+      "name": "Pixel Potrait",
+      "img": "images/pixel potrait.jpg",
+      "price": "380"
+    },
+    {
+      "id": 6,
+      "name": "Skretch Photographer",
+      "img": "images/skretch.jpg",
+      "price": "400"
+    },
+    {
+      "id": 7,
+      "name": "Surfing Poster '20",
+      "img": "images/surf poster.jpg",
+      "price": "436"
+    },
+    {
+      "id": 8,
+      "name": "Viral Meme Tamplate",
+      "img": "images/vaporwave-style.jpg",
+      "price": "787"
+    },
+    {
+      "id": 9,
+      "name": "Vintage Wing",
+      "img": "images/vintage wing.jpg",
+      "price": "220"
+    }
+    
+  ]
