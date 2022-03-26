@@ -5,11 +5,25 @@ import './Shop.css'
 
 const Shop = () => {
     const [products, setProducts] = useState([])
+    const [cart, setCart] = useState([])
+    const [random, setRandom] = useState([])
 
     const handleCart = (product) => {
-        
+        const newCart = [...cart, product]
+        if(newCart.length > 4){
+            
+        }
+        setCart(newCart)
     }
+    const randomSelect = (cart) => {
+      
+      const  randomCart = [...cart]
+      const rendomEle =  Math.floor((Math.random) * randomCart -1)
+      console.log(rendomEle);
+      setCart(rendomEle);
 
+    }
+    
 
 
     useEffect(() => {
@@ -18,7 +32,7 @@ const Shop = () => {
         .then(data => setProducts(data))
     },[])
     return (
-        <div className='container'>
+        <div className='container mt-5'>
           <div className='shop-container'>
               <div className='products-contaiener m-3'>
                     {
@@ -26,7 +40,7 @@ const Shop = () => {
                     }
                </div>
                <div className='cart-container'>
-                    <Cart></Cart>
+                    <Cart cart = {cart} randomSelect = {randomSelect}></Cart>
                </div> 
           </div>
         </div>
