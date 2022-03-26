@@ -6,7 +6,7 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([])
-    const [random, setRandom] = useState([])
+    const [random, setRandom] = useState('')
 
     const handleCart = (product) => {
         const newCart = [...cart, product]
@@ -20,6 +20,13 @@ const Shop = () => {
       setCart([random])
       
 
+    }
+
+
+    const removeCart = (cart) => {
+        console.log(cart);
+        const remove = (cart.splice(0,cart.length));
+        setCart([remove]);
     }
 
     
@@ -39,7 +46,7 @@ const Shop = () => {
                     }
                </div>
                <div className='cart-container'>
-                    <Cart cart = {cart} randomSelect = {randomSelect}></Cart>
+                    <Cart cart = {cart} randomSelect = {randomSelect} removeCart = {removeCart}></Cart>
                </div> 
           </div>
         </div>
