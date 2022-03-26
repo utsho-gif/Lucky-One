@@ -1,5 +1,6 @@
 import React from 'react';
 import './Cart.css'
+import {FaRandom} from 'react-icons/fa'
 
 const Cart = (props) => {
     const {cart, randomSelect} = props;
@@ -9,11 +10,11 @@ const Cart = (props) => {
             {
                 cart.map(product => 
                 <div className='cartcontainer'>
-                    <img src={product.img}alt="" />
+                    <img src={product.img} alt="" />
                     <p>{product.name}</p> 
                 </div>)
             }
-            <button onClick={() => randomSelect(cart)}>Random Choose</button>
+            <button onClick={() => randomSelect(cart)}>Random <FaRandom></FaRandom></button>
         </div>
     );
 };

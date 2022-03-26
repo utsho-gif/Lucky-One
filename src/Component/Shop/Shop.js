@@ -16,13 +16,13 @@ const Shop = () => {
         setCart(newCart)
     }
     const randomSelect = (cart) => {
+      console.log(cart);
+      const random = cart[Math.floor(Math.random()*cart.length)];
+      console.log(random);
       
-      const  randomCart = [...cart]
-      const rendomEle =  Math.floor((Math.random) * randomCart -1)
-      console.log(rendomEle);
-      setCart(rendomEle);
 
     }
+
     
 
 
