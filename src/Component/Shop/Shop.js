@@ -6,7 +6,6 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([])
-    const [random, setRandom] = useState('')
 
     const handleCart = (product) => {
         const newCart = [...cart, product]

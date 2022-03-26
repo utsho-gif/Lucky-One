@@ -8,8 +8,12 @@ const Product = (props) => {
     return (
         <div className='product-container'>
             <img src= {img} alt="" />
-            <h3>Name: {name}</h3>
-            <p>Price: ${price}</p>
+            <div className='product-info'>
+                
+              
+              <p className='product-name'>Name: {name}</p>
+              <p>Price: ${price}</p>
+            </div>
             <div className='btn click'>
                 <button onClick={() => handleCart(product)}>Cart <MdAddShoppingCart></MdAddShoppingCart> </button>
             </div>

@@ -11,3 +11,10 @@
 .cart-container{
     background-color: lightgreen;
 }
+
+@media screen and (max-width: 750px) {
+    .products-contaiener{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
